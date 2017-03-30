@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+     <head>
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+           <script>
+                var count = 0;
+                  $(document).ready(function () {
+                      $("#demo").on("click", function () {
+
+                          $("#demo1").val(function () {
+                              return count += 1;
+                          });
+
+                      })
+                  });
+
+
+
+
+           </script>
+     </head>
+     <body>
+           <p id="me"> Input: <input id="demo" type="text" value="Click me"><br><br></p>
+           <p> Clicked: <input id="demo1" type="text" > times </p>
+
+
+     </body>
+
+
+
+
+
+
+
+</html>
